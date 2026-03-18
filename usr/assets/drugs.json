@@ -1,0 +1,213 @@
+{
+  "drug_classes": [
+    {
+      "id": "antimicrobial_gi",
+      "name": "Antimicrobial Agents (GI)",
+      "use": "H. pylori eradication",
+      "drugs": [
+        {
+          "id": "amoxicillin",
+          "name": "Amoxicillin",
+          "class": "Beta-lactam antibiotic",
+          "mechanism": "Inhibits bacterial cell wall synthesis by binding to PBPs (Penicillin Binding Proteins). Causes osmotic lysis of bacteria.",
+          "body_pathway": {
+            "absorption": "Well absorbed from small intestine (93% bioavailability)",
+            "stomach": "Stable in gastric acid unlike ampicillin",
+            "small_intestine": "Primary absorption site — enters bloodstream",
+            "distribution": "Widely distributed to tissues and fluids",
+            "target": "Bacterial cell wall in stomach lining",
+            "action": "Blocks transpeptidase enzyme — bacteria cannot build cell wall — bursts and dies",
+            "metabolism": "Partially metabolized in liver",
+            "excretion": "Primarily renal (unchanged in urine)"
+          },
+          "pharmacokinetics": {
+            "onset": "30-60 minutes",
+            "peak": "1-2 hours",
+            "duration": "6-8 hours",
+            "half_life": "1-1.5 hours"
+          },
+          "clinical_use": ["H. pylori triple therapy", "GI infections"],
+          "benefits": ["Kills H. pylori", "Prevents ulcer recurrence", "Well tolerated"],
+          "side_effects": ["Diarrhea", "Nausea", "Allergic reaction", "Rash", "Antibiotic-associated colitis"],
+          "contraindications": ["Penicillin allergy", "Mononucleosis"],
+          "drug_interactions": ["Warfarin — increases bleeding risk", "Methotrexate — toxicity"],
+          "brand_names": ["Amoxil", "Trimox"],
+          "key_exam_fact": "Part of H. pylori TRIPLE THERAPY: Amoxicillin + Clarithromycin + PPI"
+        },
+        {
+          "id": "bismuth_compounds",
+          "name": "Bismuth Compounds",
+          "class": "Heavy metal compound / Mucosal protective + Antimicrobial",
+          "mechanism": "Disrupts bacterial cell membrane and inhibits urease enzyme of H. pylori. Also forms protective coating on ulcers.",
+          "body_pathway": {
+            "absorption": "Minimal systemic absorption (<1%)",
+            "stomach": "Reacts with HCl to form bismuth oxychloride and bismuth citrate",
+            "action_on_bacteria": "Inhibits H. pylori urease, phospholipase, and adhesion to stomach wall",
+            "protective_layer": "Coats ulcer base with bismuth-protein complex — physical barrier",
+            "excretion": "Primarily in feces, small amount in urine"
+          },
+          "side_effects": ["Black tongue", "Black stool", "Constipation"],
+          "key_exam_fact": "Bismuth causes BLACK STOOL — not blood — educate patient!"
+        }
+      ]
+    },
+    {
+      "id": "h2_blockers",
+      "name": "H2 Histamine Receptor Blockers",
+      "use": "Reduce gastric acid secretion",
+      "mechanism_class": "Competitively block H2 receptors on gastric parietal cells → decreased cAMP → decreased H+/K+ ATPase activity → 70% reduction in acid secretion",
+      "drugs": [
+        {
+          "id": "famotidine",
+          "name": "Famotidine",
+          "potency": "Most potent H2 blocker (20x more potent than cimetidine)",
+          "mechanism": "Selective competitive antagonist of H2 receptors on parietal cells",
+          "body_pathway": {
+            "absorption": "Absorbed from small intestine, bioavailability 40-45%",
+            "target": "H2 receptors on basolateral membrane of parietal cells",
+            "action": "Blocks histamine binding → no cAMP increase → proton pump less active → less HCl",
+            "stomach_effect": "Acid volume and concentration both decrease",
+            "duration_effect": "Suppresses both basal and stimulated acid secretion"
+          },
+          "advantages": "No CYP450 inhibition, no anti-androgenic effects",
+          "side_effects": ["Headache", "Dizziness", "Constipation or diarrhea"],
+          "key_exam_fact": "FAMOTIDINE = Most potent H2 blocker with FEWEST drug interactions"
+        },
+        {
+          "id": "cimetidine",
+          "name": "Cimetidine",
+          "potency": "Least potent H2 blocker",
+          "special_notes": "INHIBITS CYP450 enzymes — many drug interactions. Has anti-androgenic effects — causes gynecomastia in men.",
+          "drug_interactions": ["Warfarin", "Phenytoin", "Theophylline", "Diazepam — all increased by CYP450 inhibition"],
+          "key_exam_fact": "CIMETIDINE = CYP450 inhibitor + Gynecomastia — most side effects among H2 blockers"
+        }
+      ]
+    },
+    {
+      "id": "ppis",
+      "name": "Proton Pump Inhibitors",
+      "use": "Most powerful acid suppression",
+      "mechanism_class": "Prodrugs — converted to active sulfenamide in acid environment — covalently (irreversibly) bind to H+/K+ ATPase (proton pump) — PERMANENTLY disable the pump — new pumps must be synthesized (takes 18-24 hours) — acid secretion suppressed 90-95%",
+      "important_notes": [
+        "All PPIs are PRODRUGS — need acidic environment to activate",
+        "Must be taken 30-60 minutes BEFORE meal for best effect",
+        "Irreversible binding — effect lasts until new pumps made",
+        "Long term use: B12 deficiency, Mg deficiency, C. diff risk, bone fractures"
+      ],
+      "drugs": [
+        {
+          "id": "omeprazole",
+          "name": "Omeprazole",
+          "first_ppi": true,
+          "metabolism": "CYP2C19 — genetic polymorphism affects response",
+          "drug_interactions": ["Clopidogrel — reduces antiplatelet effect", "Methotrexate"],
+          "brand_names": ["Prilosec", "Losec"],
+          "key_exam_fact": "FIRST PPI ever developed. Metabolized by CYP2C19 — poor metabolizers have higher drug levels"
+        },
+        {
+          "id": "pantoprazole",
+          "name": "Pantoprazole",
+          "advantage": "FEWEST drug interactions among all PPIs",
+          "iv_available": true,
+          "key_exam_fact": "PANTOPRAZOLE = Safest PPI for patients on multiple medications"
+        },
+        {
+          "id": "esomeprazole",
+          "name": "Esomeprazole",
+          "note": "S-isomer of omeprazole, more consistent acid suppression",
+          "brand_names": ["Nexium"],
+          "key_exam_fact": "Purple pill — S-isomer of omeprazole — longer lasting effect"
+        }
+      ]
+    },
+    {
+      "id": "antacids",
+      "name": "Antacids",
+      "use": "Immediate neutralization of gastric acid",
+      "mechanism_class": "Direct chemical neutralization of HCl already in stomach — no effect on acid production — only neutralize existing acid",
+      "drugs": [
+        {
+          "id": "magnesium_hydroxide",
+          "name": "Magnesium Hydroxide",
+          "reaction": "Mg(OH)₂ + 2HCl → MgCl₂ + 2H₂O",
+          "onset": "Fast — within 5 minutes",
+          "side_effect": "DIARRHEA (laxative effect)",
+          "key_exam_fact": "Mg antacids = DIARRHEA. Combined with Al antacids to balance effects."
+        },
+        {
+          "id": "aluminum_hydroxide",
+          "name": "Aluminum Hydroxide",
+          "reaction": "Al(OH)₃ + 3HCl → AlCl₃ + 3H₂O",
+          "side_effect": "CONSTIPATION + Phosphate binding (causes phosphate deficiency)",
+          "key_exam_fact": "Al antacids = CONSTIPATION + Phosphate depletion in kidneys"
+        },
+        {
+          "id": "calcium_carbonate",
+          "name": "Calcium Carbonate",
+          "reaction": "CaCO₃ + 2HCl → CaCl₂ + H₂O + CO₂",
+          "warning": "ACID REBOUND — calcium stimulates gastrin release → more acid later",
+          "key_exam_fact": "Calcium carbonate = ACID REBOUND effect + CO2 causes belching"
+        },
+        {
+          "id": "sodium_bicarbonate",
+          "name": "Sodium Bicarbonate",
+          "reaction": "NaHCO₃ + HCl → NaCl + H₂O + CO₂",
+          "warning": "SYSTEMIC ALKALOSIS risk — absorbed into blood — avoid in kidney/heart patients",
+          "key_exam_fact": "Fastest antacid but SYSTEMIC absorption = metabolic alkalosis risk"
+        }
+      ]
+    },
+    {
+      "id": "mucosal_protective",
+      "name": "Mucosal Protective Agents",
+      "drugs": [
+        {
+          "id": "sucralfate",
+          "name": "Sucralfate",
+          "mechanism": "In acidic pH → polymerizes → forms viscous gel → binds to ulcer base (positively charged bismuth binds negatively charged proteins at ulcer) → physical barrier → protects from acid/pepsin/bile",
+          "important": "NEEDS ACID to work — do NOT give with PPIs or antacids at same time",
+          "key_exam_fact": "Sucralfate works ONLY in acidic environment — never give with PPIs simultaneously"
+        },
+        {
+          "id": "bismuth_subsalicylate",
+          "name": "Bismuth Subsalicylate",
+          "brand_name": "Pepto-Bismol",
+          "uses": ["H. pylori quadruple therapy", "Traveler's diarrhea", "Ulcer protection"],
+          "key_exam_fact": "Used in QUADRUPLE THERAPY for H. pylori: Bismuth + Metronidazole + Tetracycline + PPI"
+        }
+      ]
+    },
+    {
+      "id": "prostaglandins",
+      "name": "Prostaglandins",
+      "drugs": [
+        {
+          "id": "misoprostol",
+          "name": "Misoprostol",
+          "class": "Synthetic PGE1 analogue",
+          "mechanism": "Binds EP3 receptors on parietal cells → decreases cAMP → less acid. Binds EP4 on mucous cells → increases mucus and bicarbonate → protects lining.",
+          "main_use": "Prevent NSAID-induced gastric ulcers",
+          "other_uses": ["Cervical ripening", "Labor induction", "Postpartum hemorrhage"],
+          "side_effects": ["Diarrhea (most common)", "Abdominal cramping", "CONTRAINDICATED IN PREGNANCY — causes uterine contractions"],
+          "key_exam_fact": "Misoprostol = Given WITH NSAIDs to protect stomach. CONTRAINDICATED in pregnancy."
+        }
+      ]
+    },
+    {
+      "id": "antimuscarinic",
+      "name": "Antimuscarinic Agents",
+      "drugs": [
+        {
+          "id": "dicyclomine",
+          "name": "Dicyclomine",
+          "class": "Anticholinergic / Antimuscarinic",
+          "mechanism": "Blocks M3 muscarinic receptors on GI smooth muscle → prevents acetylcholine binding → smooth muscle relaxation → reduces spasm and cramping",
+          "use": "Irritable Bowel Syndrome (IBS) — reduces pain and cramping",
+          "side_effects": ["Dry mouth", "Blurred vision", "Urinary retention", "Constipation", "Tachycardia"],
+          "memory_trick": "Anti-MUSCARINIC = Anti-MOISTURE = Dry mouth, Dry eyes, Constipation",
+          "key_exam_fact": "Dicyclomine for IBS. Side effects = all DRY: dry mouth, dry eyes, urinary retention"
+        }
+      ]
+    }
+  ]
+}
